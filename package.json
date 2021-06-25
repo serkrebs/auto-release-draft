@@ -29,6 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.1.0",
     "@actions/github": "^5.0.0",
     "semver": "^6.3.0"
   },
