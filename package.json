@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "auto-release-draft",
   "version": "0.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Drafts a GitHub release with the changes introduced by a new tag",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -13,16 +13,19 @@
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/serkrebs/auto-release-draft"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "",
+  "author": "Goofball, Intl.",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6"
